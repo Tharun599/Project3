@@ -117,18 +117,22 @@ figcaption {
 }
 
 @media screen and (max-width: 850px) {
-  main:has(#about) {
-    width: 95%;
-    padding: 1rem;
+  body.hobbies-page main section {
+    padding: 1.75rem;
+    border: 1px solid #34495e;
   }
-  
-  header ul {
-    flex-direction: column;
-    align-items: center;
+
+  body.hobbies-page .hiking-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  header li {
-    margin: 0.5rem 0;
+
+  body.hobbies-page h2 {
+    font-size: 1.9rem;
+  }
+
+  body.hobbies-page iframe {
+    margin: 1rem 0 1.5rem 0;               
   }
 }
 
