@@ -15,4 +15,11 @@ function initMap() {
     title: "Illinois Tech"
   });
 
+  const infoWindow = new google.maps.InfoWindow({
+    content: "<h3>Illinois Tech</h3><p>Chicago, IL</p>"
+  });
+
+  marker.addListener("click", () => {
+    infoWindow.open(map, marker);
+  });
 }
