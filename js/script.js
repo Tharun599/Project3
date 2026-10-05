@@ -22,4 +22,14 @@ function initMap() {
   marker.addListener("click", () => {
     infoWindow.open(map, marker);
   });
+
+  new google.maps.Circle({
+    map: map,
+    center: coords,
+    radius: 350,
+    fillColor: "#3498db",
+    fillOpacity: 0.25,
+    strokeColor: "#3498db",
+    strokeWeight: 2
+  });
 }
